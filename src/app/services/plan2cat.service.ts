@@ -7,12 +7,12 @@ import {
  } from '@angular/common/http';
 
 @Injectable()
-export class PlanService {
+export class Plan2catService {
 
   constructor(private http: HttpClient) {}
   
   getPlan2Cat() {
-    const req = new HttpRequest('GET', 'http://api.hbc.in.th/api/plan', {
+    const req = new HttpRequest('GET', 'http://api.hbc.in.th/api/plan2cat', {
       reportProgress: true
     });
     this.http.request(req).subscribe((event: HttpEvent<any>) => {
